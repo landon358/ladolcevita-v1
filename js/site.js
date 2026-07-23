@@ -25,7 +25,7 @@
       envPreset: 'city', fov: 27, frameRate: 10, grain: 'off', lightType: '3d',
       positionX: 0, positionY: 0, positionZ: -0.3, range: 'disabled', rangeEnd: 40, rangeStart: 0,
       reflection: 0.1, rotationX: 45, rotationY: 0, rotationZ: 0, shader: 'defaults', type: 'waterPlane',
-      uAmplitude: 4.3, uDensity: 3, uFrequency: 0, uSpeed: 0.05, uStrength: 1.4, uTime: 0, wireframe: false
+      uAmplitude: 4.3, uDensity: 3, uFrequency: 0, uSpeed: 0.1, uStrength: 1.4, uTime: 0, wireframe: false
     };
     var url = 'https://esm.sh/@shadergradient/react@2.0.0?deps=react@18.2.0,react-dom@18.2.0,@react-three/fiber@8.17.10,three@0.160.0';
     var tries = 0;
