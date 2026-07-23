@@ -6,8 +6,13 @@
 }
 *{box-sizing:border-box;}
 html,body{margin:0;padding:0;}
-html{scroll-behavior:smooth;}
-body{background:var(--bone);color:var(--ink);font-family:var(--sans);font-weight:300;-webkit-font-smoothing:antialiased;line-height:1.6;overflow-x:hidden;}
+/* NOTE: no `scroll-behavior:smooth` here â€” it fights Lenis and makes the page jump to the bottom. Lenis does the smoothing. */
+html{overflow-x:clip;}
+body{background:var(--bone);color:var(--ink);font-family:var(--sans);font-weight:300;-webkit-font-smoothing:antialiased;line-height:1.6;overflow-x:clip;}
+html.lenis,html.lenis body{height:auto;}
+.lenis.lenis-smooth{scroll-behavior:auto !important;}
+.lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain;}
+.lenis.lenis-stopped{overflow:hidden;}
 a{color:var(--brass);text-decoration:none;transition:color .3s ease;}
 a:hover{color:var(--brass-d);}
 img{display:block;max-width:100%;}
